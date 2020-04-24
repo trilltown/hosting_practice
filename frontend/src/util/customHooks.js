@@ -16,9 +16,9 @@ export const useHttp = (url, initialValue) => {
               console.log(err);
             }
           };
-        setTimeout (() => {
+        // setTimeout (() => {
             fetchData(url)
-        }, 2000)
+        // }, 2000)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     

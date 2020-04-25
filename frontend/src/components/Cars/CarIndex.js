@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Car from "./Car";
-import { useHttp } from "../../util/customHooks";
 
 export default function CarIndex({ personId }) {
     const [isLoading, setIsLoading] = useState(false);
@@ -20,7 +19,7 @@ export default function CarIndex({ personId }) {
             console.log(err);
           }
         };
-        const url = personId == 0 ? "/cars" : `/users/${personId}/cars`
+        const url = personId === 0 ? "/cars" : `/users/${personId}/cars`
           fetchData(url);
         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [personId]);
@@ -32,7 +31,7 @@ export default function CarIndex({ personId }) {
       );
     });
     return(
-        <ul>
+        <ul className="carList">
             {showCars}
         </ul>
     )

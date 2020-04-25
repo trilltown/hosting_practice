@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import CarIndex from './components/Cars/CarIndex';
-import { useHttp } from './util/customHooks';
 import PeopleSelect from './components/PeopleSelect';
 
 function App() {
@@ -10,10 +9,10 @@ function App() {
     setPersonId(e.target.value)
   }
   return (
-    <>
+    <div className="App">
       <PeopleSelect personId={personId} handleChange={handleChange}/>
       <CarIndex personId={personId}/>
-    </>
+    </div>
   );
 }
 

@@ -1,9 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv').config();
 
 const app = express(); 
-const PORT = 3001; 
+const PORT = process.env.PORT || 3001; 
 
 const carsRouter = require('./routes/cars/cars');
 const usersRouter = require('./routes/users/users');

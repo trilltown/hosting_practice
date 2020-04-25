@@ -1,0 +1,21 @@
+{
+  "name": "hosting_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend && npm install && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trilltown/hosting_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trilltown/hosting_practice/issues"
+  },
+  "homepage": "https://github.com/trilltown/hosting_practice#readme"
+}
